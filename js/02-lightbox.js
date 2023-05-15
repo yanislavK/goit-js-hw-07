@@ -7,7 +7,7 @@ const imagesArray = Array.from(galleryItems);
 imagesArray.forEach((image) => {
   const liSkeleton = `<li class="gallery__item">
    <a class="gallery__link" href="${image.original}">
-      <img class="gallery__image" src="${image.preview}" alt="Image description" />
+      <img class="gallery__image" src="${image.preview}" alt="${image.description}" />
    </a>
 </li>`;
   const liElement = document.createElement("li");

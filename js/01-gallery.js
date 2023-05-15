@@ -18,7 +18,7 @@ imagesArray.forEach((image) => {
   a.setAttribute("href", `${image.original}`);
   img.setAttribute("src", `${image.preview}`);
   img.setAttribute("data-source", `${image.original}`);
-  img.setAttribute("alt", "Image description");
+  img.setAttribute("alt", `${image.description}`);
 
   a.appendChild(img);
   li.appendChild(a);
