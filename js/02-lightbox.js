@@ -2,9 +2,7 @@ import { galleryItems } from "./gallery-items.js";
 
 const ul = document.querySelector(".gallery");
 
-const imagesArray = Array.from(galleryItems);
-
-imagesArray.forEach((image) => {
+galleryItems.forEach((image) => {
   const liSkeleton = `<li class="gallery__item">
    <a class="gallery__link" href="${image.original}">
       <img class="gallery__image" src="${image.preview}" alt="${image.description}" />

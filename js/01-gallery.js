@@ -4,9 +4,7 @@ import { galleryItems } from "./gallery-items.js";
 
 const ul = document.querySelector(".gallery");
 
-const imagesArray = Array.from(galleryItems);
-
-imagesArray.forEach((image) => {
+galleryItems.forEach((image) => {
   const li = document.createElement(`li`);
   const a = document.createElement(`a`);
   const img = document.createElement(`img`);
